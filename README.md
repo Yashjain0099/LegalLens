@@ -17,27 +17,27 @@ LegalLens is a Django-based web application designed to simplify the process of 
 
 ---
 
-
----
-
-## 📷 Screenshots
-
-> Include screenshots or UI mockups of:
-> - Landing Page
-> - Upload Page
-> - Analysis Result Page
-> - Risk Summary (Color-coded)
-
----
-
 ## 📦 Installation
 
-1. Clone the repository:
+<h4>1.Clone the repository:</h4>
 
-<pre> bash git clone https://github.com/your-username/LegalLens.git
+<pre> git clone https://github.com/your-username/LegalLens.git
 cd LegalLens </pre>
 
+<h4> 2.Create and activate a virtual environment:</h4>
 
+<pre> python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate </pre>
+
+<h4>3. Install the dependencies:</h4>
+
+<pre> pip install -r requirements.txt</pre>
+
+<h4>4.Run the Django server:</h4>
+
+<pre> python manage.py runserver</pre>
+
+Open your browser at: http://127.0.0.1:8000/
 
 
 
