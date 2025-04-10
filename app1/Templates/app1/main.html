@@ -1,0 +1,43 @@
+{% extends "app1/core.html" %}
+{% load static %}
+{% block signup %}
+                    <a href="{% url 'home' %}"> 
+                        <div class="nav-logout">logout</div>
+                    </a>
+{% endblock signup %}
+
+{% block nav-upload %}
+    <label for="file-upload" class="custom-upload-btn">
+        UPLOAD
+    </label>
+    <input type="file" id="file-upload" class="file-input" accept=".pdf,.doc,.docx,.txt">
+{% endblock nav-upload %}
+
+{% block home %}
+<a href="{% url 'main' %}">
+    <div  class="nav-hone-btn" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="HOME">
+        HOME 
+    </div>
+</a>
+{% endblock home%}
+
+
+{% block button-upload %}
+    <!-- First Upload Button -->
+    <div class="div-wrapper">
+        <label for="file-upload-1" class="main-upload-btn">
+            UPLOAD DOCUMENT
+        </label>
+        <input type="file" id="file-upload-1" class="file-input" accept=".pdf,.doc,.docx,.txt">
+        
+    </div>
+
+    <!-- Second Upload Button (Same Design) -->
+    {% comment %} <div class="div-wrapper second-upload">
+        <label for="file-upload-2" class="upload-btn">
+            UPLOAD FILE
+        </label>
+        <input type="file" id="file-upload-2" class="file-input" accept=".pdf,.doc,.docx,.txt">
+    </div> {% endcomment %}
+{% endblock button-upload %}
+
