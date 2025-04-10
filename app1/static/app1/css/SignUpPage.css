@@ -1,0 +1,408 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 50px;
+  height: 79%;
+  background-color: #bbc6d0;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+
+
+.frame {
+    
+    background-color: #bbc6d0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  /* rgba(255, 255, 255, 1.0); */
+  .frame .div {
+    background-color: rgba(255, 255, 255, 1.0);;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: #dee9f4;
+    background: linear-gradient(
+      180deg,
+      rgba(68, 90, 113, 1) 0%,
+      rgba(44, 62, 80, 1) 100%
+    );
+    box-shadow: 4px 4px 10px 1px #2c3e5080;
+    width: 418px;
+    height: 581px;
+    position: relative;
+    border-radius: 30px;
+  }
+  
+  .frame .overlap {
+    position: absolute;
+    width: 467px;
+    height: 222px;
+    top: -85px;
+    left: 0;
+  }
+  
+  .frame .overlap-group {
+    position: absolute;
+    width: 149px;
+    height: 30px;
+    top: 106px;
+    left: 140px;
+  }
+  
+  .frame .text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #dee9f4;
+    font-size: 25px;
+    letter-spacing: 1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .frame .logo {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: 133px;
+  }
+  
+  
+  .frame .overlap-2 {
+    position: absolute;
+    width: 467px;
+    height: 222px;
+    top: 0;
+    left: 0;
+  }
+  
+  .frame .ellipse-2 {
+    position: absolute;
+    width: 139px;
+    height: 139px;
+    top: 0;
+    left: 328px;
+    border-radius: 69.5px;
+    border: 21px solid;
+    border-color: #dee9f4;
+  }
+  
+  .frame .text-wrapper-2 {
+    position: absolute;
+    width: 177px;
+    top: 170px;
+    left: 38px;
+    -webkit-text-stroke: 2px #2c3e50;
+    font-family: "Segoe UI-Bold", Helvetica;
+    font-weight: 700;
+    color: #dee9f4;
+
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame .img {
+    position: absolute;
+    width: 13px;
+    height: 55px;
+    top: 130px;
+    left: 405px;
+  }
+  
+  .frame .line-2 {
+    position: absolute;
+    width: 415px;
+    height: 9px;
+    top: 149px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .frame .overlap-3 {
+    position: absolute;
+    width: 451px;
+    height: 216px;
+    top: 415px;
+    left: -70px;
+  }
+  
+  .frame .overlap-4 {
+    position: absolute;
+    width: 451px;
+    height: 216px;
+    top: 0;
+    left: 0;
+  }
+  
+  .frame .ellipse-3 {
+    width: 170px;
+    height: 170px;
+    top: 46px;
+    left: 0;
+    border-radius: 85px;
+    border: 32px solid;
+    position: absolute;
+    border-color: #dee9f4;
+  }
+  
+  .frame .rectangle {
+    top: 95px;
+    left: 1px;
+    position: absolute;
+    width: 341px;
+    height: 50px;
+    border-radius: 37px;
+    border: 2px solid #2c3e50;
+    background: linear-gradient(135deg, #dee9f4, #b0c7db);  /* ✅ Gradient for a soft, modern look */
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;  /* ✅ Makes it feel interactive */
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(44, 62, 80, 0.2);  /* ✅ Adds depth */
+}
+
+/* ✅ Hover Effect: Button Glows and Expands */
+.frame .rectangle:hover {
+    background: linear-gradient(135deg, #F5EEDC, #27548A);
+    color: #ffffff;  /* ✅ White text for contrast */
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(44, 62, 80, 0.4);
+}
+
+/* ✅ Click Effect: Button Press Animation */
+.frame .rectangle:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(44, 62, 80, 0.3);
+}
+
+  
+  .frame .text-wrapper-3 {
+    position: absolute;
+    top: 4px;
+    left: 244px;
+    -webkit-text-stroke: 0.5px #2c3e50;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #2c3e50;
+    font-size: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame .overlap-5 {
+    position: absolute;
+    width: 201px;
+    height: 37px;
+    top: 104px;
+    left: 187px;
+  }
+  
+  .frame .by-logging-in-you-re {
+    position: absolute;
+    width: 201px;
+    top: 0;
+    left: 0;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #ffffff80;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame .text-wrapper-4 {
+    position: absolute;
+    width: 167px;
+    top: 13px;
+    left: 17px;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #ffffff80;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame .text-wrapper-5 {
+    position: absolute;
+    top: 60px;
+    left: 264px;
+    font-family: "Segoe UI Semibold", Helvetica, sans-serif;
+    font-weight: 600;  /* ✅ Makes it slightly bolder */
+    color: #107bd4;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;  /* ✅ Makes it clickable */
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effect: Underline Animation */
+.frame .text-wrapper-5:hover {
+    color: #0c5ca3;
+    text-shadow: 0px 3px 10px rgba(16, 123, 212, 0.5); /* ✅ Subtle glowing effect */
+}
+
+/* ✅ Click Effect: Slight Shrink */
+.frame .text-wrapper-5:active {
+    transform: scale(0.95);
+}
+
+  
+  .frame .overlap-6 {
+    position: absolute;
+    width: 341px;
+    height: 71px;
+    top: 242px;
+    left: 40px;
+  }
+  
+  .text-wrapper-6 {
+    position: absolute;
+    width: 224px;
+    top: 3px;
+    left: 20px;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  /* .frame .text-wrapper-7 {
+    position: absolute;
+    width: 224px;
+    top: 33px;
+    left: 50px;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #dcad2e;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  } */
+  
+  .frame .rectangle-2 {
+    top: 21px;
+    left: 0;
+    background-color: #afd6f6cc;
+    /* color: #dee9f4; */
+    position: absolute;
+    width: 341px;
+    height: 50px;
+    border-radius: 37px;
+    border: 1px solid;
+    border-color: #2c3e50;
+    padding: 10px;
+  }
+  
+  .frame .overlap-7 {
+    position: absolute;
+    width: 154px;
+    height: 71px;
+    top: 166px;
+    left: 40px;
+  }
+  
+  .frame .text-wrapper-8 {
+    position: absolute;
+    width: 100px;
+    top: 2px;
+    left: 17px;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  /* .frame .text-wrapper-9 {
+    position: relative;
+    width: 98px;
+    top: 45px;
+    left: 24px;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #d7dee4;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+   */
+  .frame .rectangle-3 {
+    position: absolute;
+    width: 154px;
+    height: 50px;
+    top: 21px;
+    left: 0;
+    background-color: #afd6f6cc;
+    border-radius: 37px;
+    border: 1px solid;
+    border-color: #2c3e50;
+    padding: 10px;
+    letter-spacing: 0px;
+  }
+  
+  .frame .overlap-8 {
+    position: absolute;
+    width: 154px;
+    height: 71px;
+    top: 166px;
+    left: 225px;
+  }
+  
+  .frame .overlap-9 {
+    position: absolute;
+    width: 341px;
+    height: 71px;
+    top: 319px;
+    left: 40px;
+  }
+  
+  .frame .text-wrapper-10 {
+    position: absolute;
+    width: 224px;
+    top: 0;
+    left: 19px;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame .text-wrapper-11 {
+    position: absolute;
+    width: 224px;
+    top: 33px;
+    left: 26px;
+    font-family: "Segoe UI-Semibold", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
