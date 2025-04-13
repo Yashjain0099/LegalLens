@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -117,11 +119,29 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
-import os
-STATIC_URL = 'static/'
+# import os
+# STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-from django.contrib.messages import constants as messages
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# from django.contrib.messages import constants as messages
+import os
+# STATICFILES_DIRS = [
+#     BASE_DIR / "app1/static"
+# ]
+
+
+
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = "/static/"
+
+# Ensure the correct static directory path
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "app1", "static"),  # ✅ Fix: Correct path to "app1/static"
+]
+# Add to settings.py
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

@@ -1,0 +1,1060 @@
+body {
+    display: block;
+    margin: 0px;
+    transition: all 0.3s ease-in-out; 
+}
+.macbook-air {
+    background-color: #b2c3e5;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1520px
+}
+.macbook-air .navbar {
+    background-color: #2c3e50;
+    overflow: hidden;
+    width: 1555px;
+    height: 57px;
+    position: relative;
+    top:-10px;
+    padding:20px;
+}
+/* bbc6d0 */
+.macbook-air .div {
+    background-color: #bbc6d0;
+    overflow: hidden;
+    width: 1550px;
+    height: 1649px;
+    position: relative;
+    padding-top: 10px;
+}
+.macbook-air .nav-title {
+    position: absolute;
+    top: 11px;
+    left: 143px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #dee9f4;
+    font-size: 26px;
+    letter-spacing: 1.00px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.macbook-air .threebar {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    top: 23px;
+    left: 60px;
+}
+
+.macbook-air .nav-signup-btn{
+    position: absolute;
+    top: 11px;
+    left: 1360px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 600;  /* ✅ Slightly bolder for better visibility */
+    color: #107bd4;
+    font-size: 13px;
+    letter-spacing: 0.40px;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;  /* ✅ Makes it feel clickable */
+    /* transition: all 0.3s ease-in-out;  ✅ Smooth transition */
+    padding: 8px 16px;
+    border-radius: 20px;  /* ✅ Rounded edges for a soft look */
+    background: transparent;  /* ✅ Keeps the original minimal style */
+    border: 2px solid #107bd4;  /* ✅ Adds a border for better visibility */
+    display: inline-block;
+}
+
+/* ✅ Hover Effect: Background Fill + Color Change */
+.macbook-air .nav-signup-btn:hover {
+    background: #107bd4;
+    color: #ffffff;  /* ✅ Turns text white */
+    transform: scale(1.1);  /* ✅ Slight zoom effect */
+    box-shadow: 0px 0px 10px rgba(16, 123, 212, 0.5); /* ✅ Soft glow effect*/
+}
+/* ✅ Click Effect: Shrink  */
+.macbook-air .nav-signup-btn:active {
+        transform: scale(0.95);
+    }
+
+.macbook-air .nav-hone-btn{
+    left: 955px;
+    position: absolute;
+    top: 21.5px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-hone-btn:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);
+    text-decoration-line: underline;
+}
+
+/* ✅ Active (Click) Effect */
+.nav-hone-btn:active {
+    transform: scale(0.95);  /*Slight shrink when clicked */
+}
+
+.macbook-air .nav-upload-btn,
+.custom-upload-btn {
+    position: absolute;
+    left: 1014px;
+    top: 16px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;  /* ✅ Makes it clickable */
+    background: transparent;
+    border: none;
+    padding: 5px 10px;
+    display: inline-block;
+    /* transition: color 0.3s ease, transform 0.2s ease-in-out;  ✅ Smooth transition */
+}
+.nav-upload-btn:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+    text-decoration-line: underline;
+}  
+.custom-upload-btn{
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+    text-decoration-line: underline;
+}
+.file-input {
+    display: none;
+}
+
+
+.macbook-air .nav-contact {
+    position: absolute;
+    top: 21.5px;
+    left: 1100px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-contact:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.5);  /* Slight zoom effect */
+    text-decoration-line: underline;
+}
+.file-input {
+    display: none;
+}
+
+
+.macbook-air .nav-contact {
+    position: absolute;
+    top: 21.5px;
+    left: 1100px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-contact:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+}
+.file-input {
+    display: none;
+}
+
+
+.macbook-air .nav-contact {
+    position: absolute;
+    top: 21.5px;
+    left: 1100px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-contact:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+}
+.file-input {
+    display: none;
+}
+
+
+.macbook-air .nav-contact {
+    position: absolute;
+    top: 21.5px;
+    left: 1100px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-contact:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+}
+
+.macbook-air .userpic-icon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 12px;
+    left: 1318px;
+
+}
+.macbook-air .featurediv {
+    position: absolute;
+    width: 467px;
+    height: 306px;
+    top: 298px;
+    right: 787.5px;
+}
+.macbook-air .rectangle {
+    position: absolute;
+    width: 467px;
+    height: 260px;
+    top: 46px;
+    left: 0;
+    border-radius: 37px;
+    border: 3px solid;
+    border-color: #dee9f4;
+    box-shadow: 4px 4px 10px 1px #00000040;
+}
+.macbook-air .rectangle-2 {
+    position: absolute;
+    width: 467px;
+    height: 260px;
+    top: 46px;
+    left: 0;
+    border-radius: 37px;
+    border: 3px solid;
+    border-color: #dee9f4;
+    box-shadow: 4px 4px 10px 1px #2c3e5080;
+}
+
+.macbook-air .quick-clause {
+    position: absolute;
+    width: 276px;
+    top: 100px;
+    left: 94px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    z-index: 1000;
+}
+.macbook-air .risk-text {
+    position: absolute;
+    width: 276px;
+    top: 168px;
+    left: 94px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.macbook-air .summaries {
+    position: absolute;
+    width: 309px;
+    top: 236px;
+    left: 94px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.macbook-air .img {
+    position: absolute;
+    width: 480px;
+    height: 71px;
+    top: 0;
+    left: 0;
+}
+
+.macbook-air .feature-text{
+    position: absolute;
+    top: 16px;
+    left: 105px;
+    text-shadow: 2px 1px 3px #00000040;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.macbook-air .right-icon-1 {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: 94px;
+    left: 35px;
+    z-index: 1000;
+}
+
+.macbook-air .right-icon-2 {
+    top: 162px;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: 35px;
+    z-index: 1000;
+}
+
+.macbook-air .right-icon-3 {
+    top: 230px;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: 35px;
+    z-index: 1000;
+}
+.macbook-air .overlap-group {
+    position: absolute;
+    width: 470px;
+    height: 306px;
+    top: 303px;
+    left: 787.5px;
+    background-color: #dee8f3;
+    border-radius: 37px;
+    box-shadow: 4px 4px 10px 1px #2c3e5080;
+}
+.macbook-air .Upload-btn,.main-upload-btn{
+    position: absolute;
+    width: 330px;
+    height: 75px;
+    top: 34px;
+    left: 75px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1a73e8, #1668c2);
+    border-radius: 40px;
+    box-shadow: 0px 5px 15px rgba(26, 115, 232, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    z-index: 1000;
+}
+
+/* ✅ Hover Effect - Smooth Gradient Change */
+.Upload-btn:hover {
+    background: linear-gradient(135deg, #1668c2, #1256a0);
+    box-shadow: 0px 8px 20px rgba(26, 115, 232, 0.5);
+    transform: scale(1.07);
+}
+.main-upload-btn:hover {
+    background: linear-gradient(135deg, #1668c2, #1256a0);
+    box-shadow: 0px 8px 20px rgba(26, 115, 232, 0.5);
+    transform: scale(1.07);
+}
+/* may be by mistake adding these upload btn */
+.Upload-btn{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.main-upload-btn{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.file-input {
+    display: none;
+}
+
+
+.macbook-air .upload-document,.upload-btn {
+    position: absolute;
+    text-align: center;
+    width: 287px;
+    top: 25px;
+    left: 20px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.macbook-air .p {
+    position: absolute;
+    top: 114px;
+    left: 147px;
+    font-family: "Anonymous Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.macbook-air .overlap-2 {
+    position: absolute;
+    width: 410px;
+    height: 118px;
+    top: 160px;
+    left: 30px;
+    background-color: #ffffff;
+    border-radius: 37px;
+    border: 1px solid;
+    border-color: #00000030;
+}
+
+.macbook-air .line {
+    width: 389px;
+    height: 94px;
+    top: 12px;
+    left: 10px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.macbook-air .line-2 {
+    width: 390px;
+    height: 94px;
+    top: 11px;
+    left: 9px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.macbook-air .rectangle-3 {
+    position: absolute;
+    width: 75px;
+    height: 23px;
+    top: 46px;
+    left: 166px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #00000030;
+}
+
+.macbook-air .text-wrapper-10 {
+    position: absolute;
+    top: 48px;
+    left: 176px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #00000030;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.macbook-air .overlap-3 {
+    display:inline-block;
+    position: absolute;
+    width: 685px;
+    height: 72px;
+    top: 131px;
+    left: 395.5px;
+}
+.macbook-air .header-title {
+    position: absolute;
+    width: 678px;
+    top: 0;
+    left: 5px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    color: #2c3e50;
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: normal;
+    padding-bottom: 10px;
+    /* ✅ Ensure text is in one line */
+    white-space: nowrap;
+    overflow: hidden;
+    
+    /* ✅ Typing effect */
+    animation: typing 5s steps(50,end)forwards;
+}
+
+/* ✅ Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 31ch;}
+}
+
+.macbook-air .header-subtitle {
+    position: absolute;
+    width:700px;
+    top: 55px;
+    padding-top: 5px;
+    left:9px;
+    text-align: center;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #2c3e50;
+    font-size: 16.5px;
+    line-height: normal;
+    z-index:1000;
+    
+    /* Initially hidden */
+    opacity: 0;
+    transform: translateY(20px); /* Starts slightly lower */
+
+    /* Smooth fade-in and slide-up effect */
+    animation: fadeSlideUp 1.5s ease-out 2.5s forwards; /* Starts after title animation */
+}
+
+/* 🔥 Keyframes for smooth fade-in and slide-up */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.macbook-air .line-3 {
+    width: 1280px;
+    height: 1px;
+    top: 56px;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+
+
+.yash{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 1445px;
+    height: 700px;
+    top: 560px;
+    margin: 100px auto 0 auto;
+}
+.macbook-air .image-wrapper {
+    position: absolute;
+    width: 997px;
+    height: 222px;
+    top: 90px;
+    /* left: 91px; */
+    margin-left: 100px auto 0 auto;;
+    margin-right: 100px auto 0 auto;;
+    background-color: #b8bbbd;
+    border-radius: 37px;
+    border: 3px solid;
+    border-color: #dee9f4;
+    box-shadow: 4px 4px 10px 1px #2c3e5094;
+}
+
+.macbook-air .image {
+    position: absolute;
+    width: 167px;
+    height: 216px;
+    top: 0;
+    left: 413px;
+    object-fit: cover;
+}
+
+.macbook-air .stunning {
+    position: absolute;
+    text-align: center;
+    /* top: 765px;
+    left: 445px; */
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2c3e50;
+    font-size: 48px;
+    letter-spacing: 1.92px;
+    line-height: normal;
+}
+
+.scrollspy-wrapper {
+    top:100px;
+    position: relative;
+    width: 65%;
+    margin: 120px auto 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Custom scroll area */
+  .scrollspy-content {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    z-index: 1000;
+    position: relative;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+  }
+  
+  /* Collapse content container */
+  #navbarContent {
+    width: 100%;
+  }
+  
+  /* Navbar items row */
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* spacing between buttons */
+    flex-wrap: wrap;
+  }
+  
+  /* Individual nav item */
+  .nav-item {
+    position: relative;
+    z-index: 1001;
+  }
+  
+  /* Button aesthetic styles */
+  .navbar .btn-custom {
+    background: linear-gradient(360deg, #a2b3d6, #27548A);
+    color: #fdf9f9;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); */
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navbar .btn-custom:hover {
+    background: linear-gradient(180deg, #a2b3d6, #27548A);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(10, 10, 10, 0.5);
+  }
+  
+  /* Fix dropdown alignment */
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .scrollspy-wrapper {
+      width: 75%;
+    }
+  
+    .navbar-nav {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .scrollspy-wrapper {
+      width: 90%;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .scrollspy-wrapper {
+      width: 95%;
+      padding: 15px 10px;
+    }
+  
+    .navbar-brand {
+      font-size: 1rem;
+    }
+  
+    .navbar .btn-custom {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+
+
+
+
+
+
+.nav-logout{
+        position: absolute;
+        top: 11px;
+        left: 1360px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 600;  /* ✅ Slightly bolder for better visibility */
+        color: #107bd4;
+        font-size: 13px;
+        letter-spacing: 0.40px;
+        line-height: normal;
+        white-space: nowrap;
+        cursor: pointer;  /* ✅ Makes it feel clickable */
+        /* transition: all 0.3s ease-in-out;  ✅ Smooth transition */
+        padding: 8px 16px;
+        border-radius: 20px;  /* ✅ Rounded edges for a soft look */
+        background: transparent;  /* ✅ Keeps the original minimal style */
+        border: 2px solid #107bd4;  /* ✅ Adds a border for better visibility */
+        display: inline-block;
+}
+    
+    /* ✅ Hover Effect: Background Fill + Color Change */
+.nav-logout:hover {
+        background: #107bd4;
+        color: #ffffff;  /* ✅ Turns text white */
+        transform: scale(1.1);  /* ✅ Slight zoom effect */
+        box-shadow: 0px 0px 10px rgba(16, 123, 212, 0.5); /* ✅ Soft glow effect*/
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer style */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.contact-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 50px;
+    height: 3px;
+    background-color: #4285f4;
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    color: #4285f4;
+    font-size: 1.2rem;
+}
+
+.company-info, .quick-links {
+    margin-bottom: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add these styles to your existing style.css file */
+
+/* File upload styling */
+.file-input {
+    display: none;
+}
+
+.upload-label {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.file-info {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.analyse-btn {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.analyse-btn:hover {
+    background-color: #1557b0;
+}
+
+/* Analysis results styling */
+.analysis-results {
+    position: absolute;
+    width: 90%;
+    top: 120px;
+    left: 5%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.analysis-results h3 {
+    font-family: "Anta", sans-serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#results-content {
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: "Anonymous Pro", monospace;
+    line-height: 1.5;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.error {
+    color: #d32f2f;
+    padding: 10px;
+    background-color: #ffebee;
+    border-radius: 4px;
+}
+
+/* Highlighted clauses */
+.risky-clause {
+    background-color: #ffebee;
+    padding: 8px;
+    border-left: 3px solid #f44336;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.safe-clause {
+    background-color: #e8f5e9;
+    padding: 8px;
+    border-left: 3px solid #4caf50;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.summary-section {
+    background-color: #e3f2fd;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

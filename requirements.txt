@@ -1,0 +1,5 @@
+Django==5.0.1
+django-browser-reload==1.11.0
+google-generativeai
+PyPDF2==3.0.1
+python-docx==0.8.11
