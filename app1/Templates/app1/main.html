@@ -24,13 +24,36 @@
 
 {% block button-upload %}
     <!-- First Upload Button -->
-    <div class="div-wrapper">
+    {% comment %} <div class="div-wrapper">
         <label for="file-upload-1" class="main-upload-btn">
             UPLOAD DOCUMENT
         </label>
         <input type="file" id="file-upload-1" class="file-input" accept=".pdf,.doc,.docx,.txt">
         
-    </div>
+    </div> {% endcomment %}
+    <form method="POST" action="{% url 'upload_file' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="upload-container">
+          
+          <!-- File Upload Input -->
+          <input type="file" id="fileInput" name="uploaded_file" style="display: none;"/>
+          
+          <!-- Custom Upload Button -->
+          <button type="button" class="main-upload-btn" onclick="document.getElementById('fileInput').click()">
+            📂 Upload File
+          </button>
+      
+          <!-- Analyze Button (Initially hidden) -->
+          <button type="submit" id="analyzeBtn" class="btn-analyze" style="display: none;">
+            🔍 Analyze
+          </button>
+      
+        </div>
+      </form>
+{% endblock button-upload %}
+
+
+
 
     <!-- Second Upload Button (Same Design) -->
     {% comment %} <div class="div-wrapper second-upload">
@@ -39,5 +62,29 @@
         </label>
         <input type="file" id="file-upload-2" class="file-input" accept=".pdf,.doc,.docx,.txt">
     </div> {% endcomment %}
-{% endblock button-upload %}
+
+
+{% block button-script %}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const fileInput = document.getElementById("fileInput");
+      const analyzeBtn = document.getElementById("analyzeBtn");
+  
+      if (fileInput && analyzeBtn) {
+        fileInput.addEventListener("change", function () {
+          if (fileInput.files.length > 0) {
+            analyzeBtn.style.display = "inline-block";
+          } else {
+            analyzeBtn.style.display = "none";
+          }
+        });
+      } else {
+        console.error("fileInput or analyzeBtn not found in the DOM.");
+      }
+    });
+  </script>
+  
+  
+{% endblock button-script %}
 
