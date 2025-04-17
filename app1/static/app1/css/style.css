@@ -781,6 +781,45 @@ body {
     }
 
 
+    /* upload main button css */
+
+    .upload-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 20px;
+      }
+   
+      
+      .btn-analyze {
+        position: relative;
+        background: linear-gradient(to right, #0ce74a, #08e048);
+        color: #fff;
+        border: none;
+        top: 350px;
+        width: 330px;
+        height: 75px;
+        left: -200px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+      }
+      
+      .btn-analyze:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 8, 16, 0.5);
+      }
+      
 
 
 

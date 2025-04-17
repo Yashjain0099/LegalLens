@@ -1,0 +1,462 @@
+body {
+    display: block;
+    margin: 0px;
+    transition: all 0.3s ease-in-out; 
+    background-color: #bbc6d0;
+}
+.main{
+    background-color: #107bd4;
+
+    height: 2000px;
+}
+.navbar {
+    background-color: #2c3e50;
+    overflow: hidden;
+    width: 100px;
+    height: 57px;
+    position: relative;
+}
+.nav-title {
+    position: absolute;
+    top: 11px;
+    left: 143px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #dee9f4;
+    font-size: 26px;
+    letter-spacing: 1.00px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.threebar {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    top: 23px;
+    left: 60px;
+}
+
+.nav-signup-btn{
+    position: absolute;
+    top: 11px;
+    left: 1360px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 600;  /* ✅ Slightly bolder for better visibility */
+    color: #107bd4;
+    font-size: 13px;
+    letter-spacing: 0.40px;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;  /* ✅ Makes it feel clickable */
+    /* transition: all 0.3s ease-in-out;  ✅ Smooth transition */
+    padding: 8px 16px;
+    border-radius: 20px;  /* ✅ Rounded edges for a soft look */
+    background: transparent;  /* ✅ Keeps the original minimal style */
+    border: 2px solid #107bd4;  /* ✅ Adds a border for better visibility */
+    display: inline-block;
+}
+
+/* ✅ Hover Effect: Background Fill + Color Change */
+.nav-signup-btn:hover {
+    background: #107bd4;
+    color: #ffffff;  /* ✅ Turns text white */
+    transform: scale(1.1);  /* ✅ Slight zoom effect */
+    box-shadow: 0px 0px 10px rgba(16, 123, 212, 0.5); /* ✅ Soft glow effect*/
+}
+/* ✅ Click Effect: Shrink  */
+.nav-signup-btn:active {
+        transform: scale(0.95);
+    }
+
+.nav-hone-btn{
+    left: 955px;
+    position: absolute;
+    top: 21.5px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-hone-btn:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);
+    text-decoration-line: underline;
+}
+
+/* ✅ Active (Click) Effect */
+.nav-hone-btn:active {
+    transform: scale(0.95);  /*Slight shrink when clicked */
+}
+.nav-upload-btn,
+.custom-upload-btn {
+    position: absolute;
+    left: 1014px;
+    top: 16px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;  /* ✅ Makes it clickable */
+    background: transparent;
+    border: none;
+    padding: 5px 10px;
+    display: inline-block;
+    /* transition: color 0.3s ease, transform 0.2s ease-in-out;  ✅ Smooth transition */
+}
+.nav-upload-btn:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+    text-decoration-line: underline;
+}  
+.custom-upload-btn{
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+    text-decoration-line: underline;
+}
+.file-input {
+    display: none;
+}
+
+.nav-contact {
+    position: absolute;
+    top: 21.5px;
+    left: 1100px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-contact:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.5);  /* Slight zoom effect */
+    text-decoration-line: underline;
+}
+.file-input {
+    display: none;
+}
+.nav-contact {
+    position: absolute;
+    top: 21.5px;
+    left: 1100px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #dee9f4;
+    font-size: 13px;
+    letter-spacing: 0.44px;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-contact:hover {
+    color: #ffffff;  /* Slightly brighter color on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+}
+.file-input {
+    display: none;
+}
+
+
+
+.userpic-icon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 12px;
+    left: 1318px;
+
+}
+.featurediv {
+    position: absolute;
+    width: 467px;
+    height: 306px;
+    top: 298px;
+    right: 787.5px;
+}
+
+.overlap-3 {
+    display:inline-block;
+    position: absolute;
+    width: 685px;
+    height: 72px;
+    top: 131px;
+    left: 395.5px;
+}
+.header-title {
+    position: absolute;
+    width: 678px;
+    top: 0;
+    left: 5px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    color: #2c3e50;
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: normal;
+    padding-bottom: 10px;
+    /* ✅ Ensure text is in one line */
+    white-space: nowrap;
+    overflow: hidden;
+    
+    /* ✅ Typing effect */
+    animation: typing 3s steps(30,end)forwards;
+}
+
+/* ✅ Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 31ch;}
+}
+
+.header-subtitle {
+    position: absolute;
+    width:700px;
+    top: 55px;
+    padding-top: 5px;
+    left:9px;
+    text-align: center;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #2c3e50;
+    font-size: 16.5px;
+    line-height: normal;
+    z-index:1000;
+    
+    /* Initially hidden */
+    opacity: 0;
+    transform: translateY(20px); /* Starts slightly lower */
+
+    /* Smooth fade-in and slide-up effect */
+    animation: fadeSlideUp 1.5s ease-out 2.5s forwards; /* Starts after title animation */
+}
+
+/* 🔥 Keyframes for smooth fade-in and slide-up */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.scrollspy-wrapper {
+    top:100px;
+    position: relative;
+    width: 65%;
+    margin: 120px auto 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 200px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Custom scroll area */
+  .scrollspy-content {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    z-index: 1000;
+    position: relative;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+  }
+  
+  /* Collapse content container */
+  #navbarContent {
+    width: 100%;
+  }
+  
+  /* Navbar items row */
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* spacing between buttons */
+    flex-wrap: wrap;
+  }
+  
+  /* Individual nav item */
+  .nav-item {
+    position: relative;
+    z-index: 1001;
+  }
+  
+  /* Button aesthetic styles */
+  .navbar .btn-custom {
+    background: linear-gradient(360deg, #a2b3d6, #27548A);
+    color: #fdf9f9;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); */
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navbar .btn-custom:hover {
+    background: linear-gradient(180deg, #a2b3d6, #27548A);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(10, 10, 10, 0.5);
+  }
+  
+  /* Fix dropdown alignment */
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .scrollspy-wrapper {
+      width: 75%;
+    }
+  
+    .navbar-nav {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .scrollspy-wrapper {
+      width: 90%;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .scrollspy-wrapper {
+      width: 95%;
+      padding: 15px 10px;
+    }
+  
+    .navbar-brand {
+      font-size: 1rem;
+    }
+  
+    .navbar .btn-custom {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  /* footer style */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.contact-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 50px;
+    height: 3px;
+    background-color: #4285f4;
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    color: #4285f4;
+    font-size: 1.2rem;
+}
+
+.company-info, .quick-links {
+    margin-bottom: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+  

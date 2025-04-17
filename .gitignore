@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+app1/gemini_api.py
+
 # Virtual environment
 llenv/
 venv/

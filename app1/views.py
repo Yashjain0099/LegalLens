@@ -125,77 +125,120 @@ def signuppage(request):
     # Your signup logic here
     return render(request, 'app1/signup.html')
 
-def extract_text_from_pdf(file_bytes):
-    """Extract text from PDF file bytes"""
-    pdf_reader = PyPDF2.PdfReader(io.BytesIO(file_bytes))
-    text = ""
-    for page in pdf_reader.pages:
-        text += page.extract_text()
-    return text
+# def extract_text_from_pdf(file_bytes):
+#     """Extract text from PDF file bytes"""
+#     pdf_reader = PyPDF2.PdfReader(io.BytesIO(file_bytes))
+#     text = ""
+#     for page in pdf_reader.pages:
+#         text += page.extract_text()
+#     return text
 
-def extract_text_from_docx(file_bytes):
-    """Extract text from DOCX file bytes"""
-    doc = docx.Document(io.BytesIO(file_bytes))
-    text = ""
-    for para in doc.paragraphs:
-        text += para.text + "\n"
-    return text
+# def extract_text_from_docx(file_bytes):
+#     """Extract text from DOCX file bytes"""
+#     doc = docx.Document(io.BytesIO(file_bytes))
+#     text = ""
+#     for para in doc.paragraphs:
+#         text += para.text + "\n"
+#     return text
 
-@csrf_exempt
-def analyse_document(request):
-    """Process uploaded document and analyze with Gemini API"""
-    if request.method != 'POST':
-        return JsonResponse({'success': False, 'error': 'Only POST requests are allowed'})
+# @csrf_exempt
+# def analyse_document(request):
+#     """Process uploaded document and analyze with Gemini API"""
+#     if request.method != 'POST':
+#         return JsonResponse({'success': False, 'error': 'Only POST requests are allowed'})
 
-    if 'document' not in request.FILES:
-        return JsonResponse({'success': False, 'error': 'No document provided'})
+#     if 'document' not in request.FILES:
+#         return JsonResponse({'success': False, 'error': 'No document provided'})
 
-    uploaded_file = request.FILES['document']
-    file_extension = os.path.splitext(uploaded_file.name)[1].lower()
+#     uploaded_file = request.FILES['document']
+#     file_extension = os.path.splitext(uploaded_file.name)[1].lower()
     
-    try:
-        # Read file content
-        file_bytes = uploaded_file.read()
+#     try:
+#         # Read file content
+#         file_bytes = uploaded_file.read()
         
-        # Extract text based on file type
-        if file_extension == '.pdf':
-            extracted_text = extract_text_from_pdf(file_bytes)
-        elif file_extension in ['.doc', '.docx']:
-            extracted_text = extract_text_from_docx(file_bytes)
-        else:
-            return JsonResponse({'success': False, 'error': 'Unsupported file format'})
+#         # Extract text based on file type
+#         if file_extension == '.pdf':
+#             extracted_text = extract_text_from_pdf(file_bytes)
+#         elif file_extension in ['.doc', '.docx']:
+#             extracted_text = extract_text_from_docx(file_bytes)
+#         else:
+#             return JsonResponse({'success': False, 'error': 'Unsupported file format'})
         
-        # Check if text was extracted successfully
-        if not extracted_text or len(extracted_text) < 10:
-            return JsonResponse({'success': False, 'error': 'Could not extract text from document'})
+#         # Check if text was extracted successfully
+#         if not extracted_text or len(extracted_text) < 10:
+#             return JsonResponse({'success': False, 'error': 'Could not extract text from document'})
         
-        # Prepare prompt for Gemini
-        prompt = f"""Analyze the following legal document:
+#         # Prepare prompt for Gemini
+#         prompt = f"""Analyze the following legal document:
 
-{extracted_text[:15000]}  # Limiting to 15000 chars to avoid token limits
+# {extracted_text[:15000]}  # Limiting to 15000 chars to avoid token limits
 
-Please provide:
-1. Identify any risky clauses
-2. Summarize the key points of the document
-3. Provide overall risk assessment
+# Please provide:
+# 1. Identify any risky clauses
+# 2. Summarize the key points of the document
+# 3. Provide overall risk assessment
 
-Format your response in HTML with appropriate classes for styling:
-- Use <div class="risky-clause"> for risky clauses
-- Use <div class="safe-clause"> for safe clauses
-- Use <div class="summary-section"> for the summary section
-"""
+# Format your response in HTML with appropriate classes for styling:
+# - Use <div class="risky-clause"> for risky clauses
+# - Use <div class="safe-clause"> for safe clauses
+# - Use <div class="summary-section"> for the summary section
+# """
 
-        # Call Gemini API
-        model = genai.GenerativeModel('gemini-1.5-pro')
-        response = model.generate_content(prompt)
+#         # Call Gemini API
+#         model = genai.GenerativeModel('gemini-1.5-pro')
+#         response = model.generate_content(prompt)
         
-        # Format the response
-        analysis_results = response.text
+#         # Format the response
+#         analysis_results = response.text
         
-        return JsonResponse({
-            'success': True,
-            'results': analysis_results
+#         return JsonResponse({
+#             'success': True,
+#             'results': analysis_results
+#         })
+        
+#     except Exception as e:
+#         return JsonResponse({'success': False, 'error': str(e)})
+
+
+
+
+
+
+
+import os
+from django.shortcuts import render, redirect
+from django.core.files.storage import FileSystemStorage
+from app1.gemini_api import analyze_text  # You’ll create this helper
+from PyPDF2 import PdfReader
+
+def upload_file(request):
+    if request.method == 'POST' and request.FILES['uploaded_file']:
+        uploaded_file = request.FILES['uploaded_file']
+        fs = FileSystemStorage()
+        filename = fs.save(uploaded_file.name, uploaded_file)
+        file_path = fs.path(filename)
+
+        # Extract text (example with PDF)
+        with open(file_path, 'rb') as f:
+            reader = PdfReader(f)
+            text = ""
+            for page in reader.pages:
+                text += page.extract_text()
+
+        # Send to Gemini API
+        analysis = analyze_text(text)
+
+        # Pass result to result page
+        # Just an example
+        return render(request, 'app1/result.html', {
+            'risky_clauses': analysis.get('risky_clauses', 'No risky clauses found.'),
+            'summary': analysis.get('summary', 'No summary available.'),
+            'clause_check': analysis.get('clause_check', 'No clause check data.')
         })
-        
-    except Exception as e:
-        return JsonResponse({'success': False, 'error': str(e)})
+
+    
+    
+    
+
+    return redirect('upload_file')
