@@ -218,6 +218,9 @@ def upload_file(request):
         fs = FileSystemStorage()
         filename = fs.save(uploaded_file.name, uploaded_file)
         file_path = fs.path(filename)
+        file_url = fs.url(filename)
+        is_pdf = filename.lower().endswith('.pdf')
+
 
         # Extract text (example with PDF)
         with open(file_path, 'rb') as f:
@@ -234,7 +237,10 @@ def upload_file(request):
         return render(request, 'app1/result.html', {
             'risky_clauses': analysis.get('risky_clauses', 'No risky clauses found.'),
             'summary': analysis.get('summary', 'No summary available.'),
-            'clause_check': analysis.get('clause_check', 'No clause check data.')
+            'clause_check': analysis.get('clause_check', 'No clause check data.'),
+            'file_url': file_url,
+            'file_name': filename,
+            'is_pdf': is_pdf 
         })
 
     
