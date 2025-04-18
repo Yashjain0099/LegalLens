@@ -127,7 +127,7 @@ body {
     transform: scale(1.05);  /* Slight zoom effect */
     text-decoration-line: underline;
 }  
-.custom-upload-btn{
+.custom-upload-btn:hover{
     color: #ffffff;  /* Slightly brighter color on hover */
     transform: scale(1.05);  /* Slight zoom effect */
     text-decoration-line: underline;
