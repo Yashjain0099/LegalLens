@@ -10,7 +10,7 @@
     <button type="button" class="custom-upload-btn" onclick="document.getElementById('fileInput').click()">
       UPLOAD
     </button>
-    <input type="file" id="file-upload" class="file-input" accept=".pdf,.doc,.docx,.txt">
+    <input type="file" id="file-upload" class="file-input" accept=".pdf,.txt">
 {% endblock nav-upload %}
 
 {% block home %}
@@ -36,7 +36,7 @@
         <div class="upload-container">
           
           <!-- File Upload Input -->
-          <input type="file" id="fileInput" name="uploaded_file" style="display: none;"/>
+          <input type="file" id="fileInput" name="uploaded_file" style="display: none; "accept=".pdf, .txt"/>
           
           <!-- Custom Upload Button -->
           <button type="button" class="main-upload-btn" onclick="document.getElementById('fileInput').click()">
