@@ -7,9 +7,9 @@
 {% endblock signup %}
 
 {% block nav-upload %}
-    <label for="file-upload" class="custom-upload-btn">
-        UPLOAD
-    </label>
+    <button type="button" class="custom-upload-btn" onclick="document.getElementById('fileInput').click()">
+      UPLOAD
+    </button>
     <input type="file" id="file-upload" class="file-input" accept=".pdf,.doc,.docx,.txt">
 {% endblock nav-upload %}
 
@@ -40,12 +40,12 @@
           
           <!-- Custom Upload Button -->
           <button type="button" class="main-upload-btn" onclick="document.getElementById('fileInput').click()">
-            📂 Upload File
+             UPLOAD DOCUMENT
           </button>
       
           <!-- Analyze Button (Initially hidden) -->
           <button type="submit" id="analyzeBtn" class="btn-analyze" style="display: none;">
-            🔍 Analyze
+            <span>Analyze</span>
           </button>
       
         </div>
