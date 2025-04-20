@@ -304,26 +304,36 @@ body {
   
   /* Button aesthetic styles */
   .navbar .btn-custom {
-    background: linear-gradient(360deg, #a2b3d6, #27548A);
-    color: #fdf9f9;
+    background: linear-gradient(135deg, #4A90E2, #5072e3);
+    color: #fff;
     border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
+    padding: 10px 22px;
+    margin: 0 8px;
+    border-radius: 30px;
     font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    /* box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); */
-    position: relative;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
   }
   
   .navbar .btn-custom:hover {
-    background: linear-gradient(180deg, #a2b3d6, #27548A);
-    color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(10, 10, 10, 0.5);
+    background: linear-gradient(135deg, #5072e3, #4A90E2);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
   }
+  
+  .navbar .btn-custom.active {
+    background: linear-gradient(135deg, #003366, #0055aa);
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 85, 170, 0.3);
+    transform: scale(1.05);
+  }
+  
+  
   
   /* Fix dropdown alignment */
   .dropdown-menu {
