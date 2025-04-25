@@ -47,6 +47,7 @@
           <button type="submit" id="analyzeBtn" class="btn-analyze" style="display: none;">
             <span>Analyze</span>
           </button>
+          <img class="showimg" id="docimg" src="{% static 'app1/img/pdf.png'%}" style="display: none;" />
       
         </div>
       </form>
@@ -85,6 +86,19 @@
     });
   </script>
   
+  <script>
+    document.getElementById('fileInput').addEventListener('change', function () {
+        const fileInput = this;
+        const imgElement = document.getElementById('docimg');
+
+        if (fileInput.files && fileInput.files.length > 0) {
+            imgElement.style.display = 'inline'; // or 'block', depending on your layout
+        } else {
+            imgElement.style.display = 'none';
+        }
+    });
+</script>
+
   
 {% endblock button-script %}
 
